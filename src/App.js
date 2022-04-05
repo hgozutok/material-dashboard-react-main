@@ -61,7 +61,6 @@ export default function App() {
         data {
           firstName
           lastName
-
         }
       }
     }
@@ -211,7 +210,7 @@ export default function App() {
         <Route path="*" element={<Navigate to="/dashboard" />} />
       </Routes>
       {data &&
-        data.allCustomers.data.map((customer,index) => (
+        data.allCustomers.data.map((customer, index) => (
           // data.Customers.allCustomers.data.map((customer) => (
           <div key={customer.firstName}>
             <h1>
