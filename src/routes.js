@@ -47,7 +47,8 @@ import SignUp from "layouts/authentication/sign-up";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
-
+import Participants from "pages/Participants";
+//connect oracle
 const routes = [
   {
     type: "collapse",
@@ -112,6 +113,14 @@ const routes = [
     icon: <Icon fontSize="small">assignment</Icon>,
     route: "/authentication/sign-up",
     component: <SignUp />,
+  },
+  {
+    type: "collapse",
+    name: "Participants",
+    key: "participants",
+    icon: <Icon fontSize="small">assignment</Icon>,
+    route: "/participants",
+    component: <Participants />,
   },
 ];
 
